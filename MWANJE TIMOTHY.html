@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initialscale=1.0">
+        <title>PERSONAL PORTFOLIO</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">service</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-text">
+                    <p>UI/UX Designer</p>
+                    <h1>Hi, I'm Mwanje Timothy<br>From Uganda</h1>
+                </div>
+
+            </div>
+            
+        </div>
+       <!-------about-------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/IMG-20231009-WA0023 (1).jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 classname="sub-title">About me</h1>
+                        <p>I am by names of Mwanje Timothy and i am 22 years of age living in Nabweru and a student at Uganda Technology And Management University (UTAMU). </p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                                <li><span>Web Development</span><br>Web app Development</li>
+                                <li><span>App Development</span><br>Building  Android/iOS</li>
+                            
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Experience">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                                <li><span>Web Development</span><br>Web app Development</li>
+                                <li><span>App Development</span><br>Building  Android/iOS</li>
+                            
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-------services------>
+        <div id="services">
+            <div class="container">
+                <h1 classname="sub-title">My services</h1>
+                <div class="services-list">
+                </div>
+                <div>
+                    <h2>Web Design</h2>
+                    <p>hey there</p>
+                    <a href="#">learn more</a>
+                </div>
+
+            </div>
+        </div>
+        <script>
+            var tablinks =document.getElementsByClassName("tab-links");
+            var tabcontents =document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classlist.remove("active-links");
+
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classlist.remove("active-tab");
+
+            }
+            event.currentTarget.classlist.add("active-link")
+            document.getElementById(tabname).classlist.add("active-tab")
+        }   
+        </script>
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
